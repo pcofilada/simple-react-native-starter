@@ -1,14 +1,9 @@
-import React from 'react'
-import { Scene, Router } from 'react-native-router-flux'
+import { createRouter } from '@exponent/ex-navigation'
 
 import Main from './components/Main'
 
-const RouterComponent = () => {
-  return (
-    <Router sceneStyle={{ paddingTop: 65 }}>
-      <Scene key='main' component={Main} title='Main'/>
-    </Router>
-  )
-}
+const Router = createRouter(() => ({
+  main: () => Main
+}))
 
-export default RouterComponent
+export default Router
