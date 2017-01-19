@@ -12,7 +12,7 @@ Simple react-native boilerplate for mobile development.
 - [Redux](http://rackt.github.io/redux/index.html) a predictable state container for Javascript apps
 - [Redux Thunk](https://github.com/gaearon/redux-thunk) middleware for Redux
 - [Babel](http://babeljs.io/) for ES6+ support
-- [React Native Router Flux](https://github.com/aksonov/react-native-router-flux) a router based on new React Native Navigation API
+- [Ex Navigation](https://github.com/exponent/ex-navigation) route-centric navigation for React Native
 
 ## File Structure
 - `/android` - Android native stuff
@@ -25,3 +25,4 @@ Simple react-native boilerplate for mobile development.
   - `/reducers` - Reducers
   - `/App.js` - Base component
   - `/Router.js` - App navigation
+  - `/Store.js` - Store

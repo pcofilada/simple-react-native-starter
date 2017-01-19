@@ -1,18 +1,26 @@
 import React, { Component } from 'react'
 import { Provider } from 'react-redux'
-import { createStore, applyMiddleware } from 'redux'
-import ReduxThunk from 'redux-thunk'
+import {
+    NavigationContext,
+    NavigationProvider,
+    StackNavigation,
+} from '@exponent/ex-navigation'
 
-import reducers from './reducers'
+import Store from './Store'
 import Router from './Router'
+
+const navigationContext = new NavigationContext({
+  router: Router,
+  store: Store
+})
 
 class App extends Component {
   render() {
-    const store = createStore(reducers, {}, applyMiddleware(ReduxThunk))
-
     return (
-      <Provider store={store}>
-        <Router />
+      <Provider store={Store}>
+        <NavigationProvider context={navigationContext}>
+          <StackNavigation initialRoute={Router.getRoute('main')} />
+        </NavigationProvider>
       </Provider>
     ) 
   }
