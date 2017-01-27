@@ -1,11 +1,11 @@
-import React, { Component } from 'react'
-import { View, Text } from 'react-native'
+import React, { Component } from 'react';
+import { View, Text } from 'react-native';
 
 class Main extends Component {
   static route = {
     navigationBar: {
-      title: 'Main'
-    }
+      title: 'Main',
+    },
   }
 
 
@@ -14,8 +14,8 @@ class Main extends Component {
       <View>
         <Text>React Native Boilerplate</Text>
       </View>
-    )
+    );
   }
 }
 
-export default Main
+export default Main;
