@@ -12,7 +12,7 @@ Simple react-native boilerplate for mobile development.
 - [Redux](http://rackt.github.io/redux/index.html) a predictable state container for Javascript apps
 - [Redux Thunk](https://github.com/gaearon/redux-thunk) middleware for Redux
 - [Babel](http://babeljs.io/) for ES6+ support
-- [Ex Navigation](https://github.com/exponent/ex-navigation) route-centric navigation for React Native
+- [React Navigation](https://github.com/react-community/react-navigation) navigation for React Native
 
 ## File Structure
 - `/android` - Android native stuff
