@@ -2,12 +2,9 @@ import React, { Component } from 'react';
 import { View, Text } from 'react-native';
 
 class Main extends Component {
-  static route = {
-    navigationBar: {
-      title: 'Main',
-    },
+  static navigationOptions = {
+    title: 'Main',
   }
-
 
   render() {
     return (

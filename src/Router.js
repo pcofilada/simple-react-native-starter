@@ -1,9 +1,9 @@
-import { createRouter } from '@exponent/ex-navigation';
+import { StackNavigator } from 'react-navigation';
 
 import Main from './components/Main';
 
-const Router = createRouter(() => ({
-  main: () => Main,
-}));
+const BaseNavigation = StackNavigator({
+  Main: { screen: Main },
+});
 
-export default Router;
+export default BaseNavigation;
